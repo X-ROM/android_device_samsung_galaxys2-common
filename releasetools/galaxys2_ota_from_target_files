@@ -73,6 +73,16 @@ def WriteFullOTAPackage(input_zip, output_zip):
   if OPTIONS.wipe_user_data:
     script.FormatPartition("/data")
 
+  script.Print("                                          ");
+  script.Print("     _____       ______         ___  ___  ");
+  script.Print("    /  __ \      | ___ \        |  \/  |  ");
+  script.Print("    | /  \/ _____| |_/ /  ___   | .  . |  ");
+  script.Print("    | |    |_____|    /  / _ \  | |\/| |  ");
+  script.Print("    | \__/\      | |\ \ | (_) | | |  | |  ");
+  script.Print("     \____/      \_| \_\ \___/  \_|  |_/  ");
+  script.Print("                                          ");
+  script.Print("                                          ");
+
   script.Unmount("/system")
   script.FormatPartition("/system")
   script.Mount("/system")
